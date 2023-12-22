@@ -1,12 +1,16 @@
-*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {all: unset;  display: revert;}
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+    all: unset;
+    display: revert;
+}
 
-html{
+html {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 16px;
 }
+
 /*header*/
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,18 +21,29 @@ html{
     height: 80px;
     text-transform: uppercase;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
+.header svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
 
 /*ul del header*/
-.header ul{
+.header ul {
     display: flex;
-    
+
 }
 
 /*todas las listas*/
-li{ list-style: none;
+li {
+    list-style: none;
 }
+
 /*primer section */
-.new{
+.new {
     position: relative;
     background-color: black;
     max-width: 1100px;
@@ -36,140 +51,181 @@ li{ list-style: none;
     display: flex;
     gap: 30px;
     color: white;
+    padding-bottom: 200px;
 }
- 
-.new h2{
+
+.new h2 {
     font-size: 1.63em;
     margin-bottom: 25px;
 }
-.new time{
+
+.new time {
     font-size: 10px;
 }
-.new > article {
+
+.new>article {
     width: 90%;
 }
+
 /* los hover del aside lateral */
-.stars :hover{
-    color: gray;
-    cursor: pointer;
-}
-.Coachella :hover{
-    color: grey;
-    cursor: pointer;
-}
-.Titanic :hover{
+.stars :hover {
     color: gray;
     cursor: pointer;
 }
 
-.header svg{
-    width: 20px;
-    height: 20px;
-    fill: white;
+.Coachella:hover {
+    color: grey;
+    cursor: pointer;
 }
-.header .main-menu ul,/*Menu principal*/
-.header .tools-menu,/*Menu herramientas*/
-.header .tools-menu ul /*redes sociales*/{
+
+.Titanic :hover {
+    color: gray;
+    cursor: pointer;
+}
+
+.header .main-menu ul,
+/*Menu principal*/
+.header .tools-menu,
+/*Menu herramientas*/
+.header .tools-menu ul
+
+/*redes sociales*/
+    {
     display: flex;
     align-items: center;
     gap: 40px;
 }
 
-.bg-main{
-    background-color: black;
- }
-
-img{
-    max-width: 100%;
-    height: auto;
+main {
+    background-color: #abb8c3;
 }
-.new aside article{
+
+.bg-main {
+    background-color: black;
+}
+
+.new aside article {
     display: flex;
     gap: 25px;
     margin-bottom: 25px;
 }
+
 .new aside article:last-child {
     margin-bottom: 0;
 }
+
 /* titulo de pie de foto de la imagen principal */
-.news-data{ 
+.news-data {
     position: absolute;
-    bottom: 0;
-    right: 0;
-    max-width: 590px;
-    margin-bottom: 0px;
+    bottom: 200px;
+    right: 12px;
+    max-width: 400px;
     background-color: black;
-    height: 250px;   
-}
-.news-data h2{
-    margin: 20px;
-    font-size: 30px ;
-}
-.news-data p{
-    margin: 20px;
-    font-size: 16px;
-    letter-spacing: -0,03px;
-    font-family: sans-serif;
-}
-.news-data a{
-     margin: 20px;
-     font-size: 10px;
+    padding: 40px 0 0 40px;
+
 }
 
-.new > article img {
+.news-data h2 {
+    margin: 20px;
+    font-size: 30px;
+}
+
+.news-data p {
+    margin: 20px;
+    font-size: 16px;
+    letter-spacing: -0, 03px;
+    font-family: sans-serif;
+}
+
+.news-data a {
+    margin: 20px;
+    font-size: 10px;
+}
+
+.new>article {
     height: 600px;
+    width: 80%;
+    background-repeat: no-repeat;
+    background-image: url(https://filmax.themerex.net/wp-content/uploads/2018/01/top-promo.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
 }
 
 /* 17/12/2023*/
 
-.barra-trailer ul{ /*barra del menu del eslaider*/
-   display: flex;
-    gap: 20px;
-    background-color:black;
-    color: white;
-    padding: 120px;
-    padding-left: 16%; 
+.barra-trailer {
+    max-width: 1200px;
+    margin-inline: auto;
+    position: relative;
 
 }
-.barra-trailer ul a{
+
+.barra-trailer>div {
+    margin-top: -125px;
+
+}
+
+.barra-trailer ul {
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+
+.barra-trailer ul a {
     font-size: 12px;
 }
-.fondo-eslaider{
-    background-color: #abb8c3;   ;
-}
-.eslaider{
+
+.eslaider {
     display: flex;
-    max-width: 999px;       
     gap: 20px;
-     
 }
-.eslaider img{
-    margin-top: -50px;
-    padding-left: 170px;
-    position: relative;
-}
-.eslaider-portada{   
+
+.eslaider-portada {
     position: absolute;
-    margin-top: -55px;
-   margin-left: 170px;
-   color: white;
-   text-align: center;
-   padding-left: 25px;
+    bottom: 20px;
+    color: white;
+    text-align: center;
 }
 
+.eslaider-portada a {
+    font-size: 10px;
+    color: gray;
+    cursor: pointer;
 
-.eslaider-portada a{
-          font-size: 10px;
-          color: gray;
-          cursor: pointer;
-              
 }
+
 .eslaider :hover {
     color: grey;
     cursor: pointer;
 }
 
-.eslaider :hover a{
+.eslaider :hover a {
     cursor: pointer;
-   color: white;
+    color: white;
+}
+/*samurai*/
+.samurai{
+    background-image: url(https://filmax.themerex.net/wp-content/uploads/2018/01/bg_samurai.jpg?id=458);
+    height: 440px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.samurai-tex{
+ width: 50%;
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+}
+.samurai-hbo{
+    display: flex;
+    gap: 20px;
+}
+
+
+/* cartelera*/
+.cartelera{
+    display: flex;
+
 }
