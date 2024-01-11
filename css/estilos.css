@@ -7,6 +7,7 @@ html {
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 /*header*/
@@ -35,8 +36,6 @@ img {
     height: 20px;
     fill: white;
 }
-
-
 /*ul del header*/
 .header ul {
     display: flex;
@@ -79,12 +78,22 @@ li {
     color: white;
     padding-bottom: 200px;
 }
-
+/*recent news*/
 .new h2 {
     font-size: 1.63em;
     margin-bottom: 25px;
 }
-
+.recent-new::after{ /*linea roja*/  
+content: "";
+height: 1px;
+width: 28px;
+background-color: red;
+display: inline-block;
+vertical-align: middle;
+margin-top: -1px;
+margin-left: 16px
+}
+/*__________*/
 .new time {
     font-size: 10px;
 }
@@ -113,15 +122,30 @@ li {
 /*Menu principal*/
 .header .tools-menu,
 /*Menu herramientas*/
-.header .tools-menu ul
-
-/*redes sociales*/
+.header .tools-menu ul/*redes sociales*/
  {
     display: flex;
     align-items: center;
     gap: 40px;
 }
-
+/* le vamos a colocar los hover a las redes sociales*****/
+#Capa_1:hover{ /* twitter*/
+    fill: #1da1f3;
+    cursor: pointer;
+}
+#Capa_2:hover{ /* facebook******/
+    fill: #3a559f;
+    cursor: pointer;
+}
+#Capa_3:hover{ /*****instagram****/
+    fill: #ef1b50;
+    cursor: pointer;
+}
+#Capa_4:hover{
+    fill: #ce031a;
+    cursor: pointer;
+}
+/*____________*/
 main {
     background-color: #abb8c3;
 }
@@ -164,7 +188,6 @@ main {
     letter-spacing: -0, 03px;
     font-family: sans-serif;
 }
-
 .news-data a {
     margin: 20px;
     font-size: 10px;
@@ -179,7 +202,6 @@ main {
     fill: #e0011a;
     cursor: pointer; 
 }
-
 .new>article {
     height: 600px;
     width: 80%;
@@ -254,13 +276,15 @@ margin-right: 20px;
     bottom: 20px;
     color: white;
     text-align: center;
+    
 }
-.eslaider-portada a {
+.eslaider-portada a {       
     font-size: 12px;
     color: #bdbdbd;
     cursor: pointer;
     line-height: 16px;
-    margin-top: 5px;
+   padding-left: 5px;
+    
 }
 .eslaider :hover {
     color: grey;
@@ -287,7 +311,6 @@ margin-right: 20px;
 .samurai{
     background-image: url(https://filmax.themerex.net/wp-content/uploads/2018/01/bg_samurai.jpg?id=458);
     height: 440px;
-    width: 1519px;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -334,11 +357,17 @@ margin-right: 20px;
 .view{
     color: red;
     cursor: pointer;
-}
-footer svg{
+}/**pie de pagina del samurai  VIEW**/
+#Outline{
     fill: red;
     cursor: pointer;
-    margin-right: 10px;
+    margin-right: 10px
+}
+/*PIE DE PAGINA DEL SAMURAI WATCH TRAILER*/
+footer svg{
+    cursor: pointer;
+    margin-right: 3px;
+    margin-left: 10px;
   
 }
 /* cartelera*/
@@ -393,10 +422,16 @@ footer svg{
 .cartelera-wacth a{
 margin-left: 50px;
 }
-.cartelera-wacth svg{
+/****flecha amarilla en el eslaider de la cartelera ****+PREGUNTAR EN LA CLASE EL JUEVESSSSSSSSSSSSSSSSSS******/
+.cartelera-wacth a ::before{
+    content: "";
     color: #f8b350;
+    height: 33px;
+    width: 33px;
+   line-height: 33px;
    
 }
+/*____________*/
 .cartelera-parrafo svg{
     fill:#f8b350; 
     position: absolute;
@@ -503,6 +538,19 @@ margin-left: 50px;
     font-weight: 700;
     font-size: 2.313rem;
     letter-spacing: -.3px;
+    margin-top: 10px;
+ }
+ /*linea roja en el titulo del apartado del grip*/
+ .white-titulo::before{
+    content: "";
+    background-color:red;
+    content: '';
+    display: block;
+    height: 1px;
+    width: 48px;
+    position: relative;
+    left: 5%;
+    margin-bottom: 2%;  
  }
  .white-parrafo{
     color: #737373;
@@ -519,8 +567,8 @@ margin-left: 50px;
  }
  
 .elemento-grid-1{
-    background-image: url("	https://filmax.themerex.net/wp-content/uploads/2017/12/post-3-copyright-1170x658.jpg");
     background-size: cover;
+    background-image: linear-gradient(transparent, #000 ), url("https://filmax.themerex.net/wp-content/uploads/2017/12/post-3-copyright-1170x658.jpg");
     grid-column-start:1;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -533,7 +581,7 @@ margin-left: 50px;
 }
 
 .elemento-grid-2{
-    background-image: url("https://filmax.themerex.net/wp-content/uploads/2017/12/post-12-copyright-760x428.jpg");
+    background-image: linear-gradient(transparent, #000), url("https://filmax.themerex.net/wp-content/uploads/2017/12/post-12-copyright-760x428.jpg");
     background-size: cover;
     grid-column-start:3;
     grid-column-end:4;  
@@ -546,7 +594,7 @@ margin-left: 50px;
     position: relative;/* para poner la informacion en el pie de la imagen*/
 }
 .elemento-grid-3{
-    background-image: url("https://filmax.themerex.net/wp-content/uploads/2017/12/post-5-copyright-760x428.jpg");
+    background-image: linear-gradient(transparent, #000), url("https://filmax.themerex.net/wp-content/uploads/2017/12/post-5-copyright-760x428.jpg");
     grid-column-start:4;
     grid-column-end:5;  
     grid-row-start: 1 ;
@@ -560,7 +608,7 @@ margin-left: 50px;
     position: relative;
 }
 .elemento-grid-4{
-    background-image: url("https://filmax.themerex.net/wp-content/uploads/2017/12/post-6-copyright-760x428.jpg");
+    background-image: linear-gradient(transparent, #000), url("https://filmax.themerex.net/wp-content/uploads/2017/12/post-6-copyright-760x428.jpg");
     object-fit: cover;
     grid-column-start:3;
     grid-column-end:5;  
@@ -726,6 +774,7 @@ left: 20px;
     width: 200px;
     height:50.86px;
 }
+
   /*footer*/
 
 .footer-black{
@@ -760,6 +809,18 @@ left: 20px;
     font-size: 1.063em;
     text-transform: uppercase;
 }
+/*after para colocar una linea roja en el footer en la parte de los titulos h3*/
+.linea-roja h3::after{
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 28px;
+    background: red;
+    vertical-align: middle;
+    margin-top: -1px;
+    margin-left: 16px;
+}
+/*___________________________*/
 /*articulos Movies del footer*/
 .ar-movies{
     color: #b8babb;
@@ -783,28 +844,37 @@ left: 20px;
 .newlestter{
     border: solid 1px white;
 }
+
 .newlestter svg{
     width: 15px;
     height: 15px;
     fill: white;
     cursor: pointer;
 }
+/** mirar el input ***************************/
+.newlestter a :hover{
+    fill: red;
+}
 
 /*redes*/
-.redes ul li a svg{
+.redes-footer ul li a svg{
     fill: white;
     cursor: pointer;
     padding-top: 10px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
 }
 
-.redes ul {
+.redes-footer ul {
  display: flex;
-    gap: 10px;
-    padding-top: 50px;
-    padding-top: 50px;
+gap: 10px;
+padding-top: 50px;
+padding-top: 50px;
 }
 
- .twitter{
+.twitter{
    border-radius: 50%;
    background-color:#1da1f3;
    width: 50px;
@@ -833,7 +903,6 @@ left: 20px;
     width: 50px; 
     height: 50px;
     text-align: center;
-
 }
 /***menu lateral****/
 .menu-lateral{
@@ -842,22 +911,17 @@ left: 20px;
     right: 0px;
    
 }
-.lateral{
-    position: sticky;
- 
-}
-
 .lateral svg{
-    fill: black
+    fill: black;
+   
 }
-
 
 .carrito{ 
  background-color: #e0041d;
  margin-bottom: 2px;
  height: 50px;
  width: 50px; 
- padding-right: 7px;
+ padding-right: 20px;
  padding-top: 20px;
  cursor: pointer;
  
@@ -869,16 +933,17 @@ left: 20px;
     margin-bottom: 2px;
     height: 50px;
     width: 50px;
-    padding-right: 7px;
+    padding-right: 20px;
     padding-top: 20px;
     cursor: pointer;
+    
 
 }
 .panel{
     background-color:#e0041d;
     height: 50px;
     width: 50px;
-    padding-right: 7px;
+    padding-right: 20px;
     padding-top: 20px;
     cursor: pointer;
     
@@ -886,11 +951,11 @@ left: 20px;
 /*ancla final de la pagina(no funciona el ancla ARREGLAR)*/
 .icono svg{
     fill: white;
-    position: absolute;
-    top: 100px;
-    right: 0px;
-}
-.icono{
-    position: relative;
+    position: fixed;
+    bottom: 40px;
+    right: 70px;
+    height: 3em;
+    width: 3em;
+    background-color: black;
     cursor: pointer;
 }
