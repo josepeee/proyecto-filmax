@@ -22,6 +22,10 @@ html {
     height: 80px;
     text-transform: uppercase;
 }
+/* colocar mano en el logo de la cabezera**/
+header img{
+    cursor: pointer;
+}
 .stiky{
     position: sticky;
     top: 0;
@@ -39,6 +43,7 @@ img {
 /*ul del header*/
 .header ul {
     display: flex;
+    cursor: pointer;
 }
 
 /*todas las listas*/
@@ -375,13 +380,16 @@ footer svg{
     position: relative;
     display: flex;
     background-color: red;
+    cursor: pointer;
 }
+/************************/
 .cartelera-parrafo{
    position: absolute;
    margin-left: 20px;
-   top: 400px;
+   top: 550px;
    color: #fff;
 }
+
 .cartelera-parrafo h3::before{
     content: "";
     display: block;
@@ -394,7 +402,6 @@ footer svg{
 }
 .cartelera-parrafo h3{
     font-family: "Roboto Condensed",sans-serif;
-    position: relative;
     font-weight: 700px;
     text-transform: uppercase;
     font-size: 1.688em;
@@ -407,18 +414,20 @@ footer svg{
     line-height: 16px;
     color:#bdbdbd;
     font-family: inherit;
+    
 }
 .cartelera-wacth{
     font-family: "Roboto Condensed",sans-serif;
     font-size: 11px;
     font-weight: 700px;
-    position: relative;
     letter-spacing: .5px;
     padding-left: 46px;
     color: #fff;
-    position: relative;
     margin-top: 10px;
+    opacity: 0;
+    bottom: 0;
 }
+
 .cartelera-wacth a{
 margin-left: 50px;
 }
@@ -434,14 +443,10 @@ margin-left: 50px;
 /*____________*/
 .cartelera-parrafo svg{
     fill:#f8b350; 
-    position: absolute;
     height: 10px;
     width: 10px;
     line-height: 33px;
     display: inline-block;
-    position: absolute;
-    top: 50%;
-    font-family: "fontello";
     background: #2e3036;
     -webkit-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -449,7 +454,23 @@ margin-left: 50px;
     text-align: center;
     cursor: pointer;
     margin-top: 30px;
+   position: absolute;
+    opacity: 0;
+    bottom: 0;
 }
+/*transciones en la carterlera*/
+.cartelera-transition:hover svg {
+    opacity: 1;
+}
+.cartelera-transition:hover .cartelera-wacth{
+opacity: 1;
+}
+.cartelera-transition:hover .cartelera-parrafo {
+  top:70%;
+  transition-duration: .5s;
+}
+/*____________________________*/
+
 /*secion eslaiders trabajadores*/
 .eslaider-trabajadores{
     display: flex;
@@ -466,9 +487,14 @@ margin-left: 50px;
     text-align: center;
     justify-content: center;
     padding-top: 40px;
+
     
    }
-     
+     .eslaider-foto{
+       width: 370px;
+       margin-right: 30px;
+       
+     }
  .eslaider-foto::before{
      content:",,";
      position: absolute;
@@ -490,6 +516,7 @@ margin-left: 50px;
     border-radius: 50%;
      margin-top: 90px;
      margin-left: 35px;
+     
  }
  .eslaider-foto blockquote{
     padding-top: 30px;
@@ -513,6 +540,12 @@ margin-left: 50px;
     margin-top: 0.7em;
     font-size: 12px;
     opacity: .75;
+}
+.hiden{
+    display: none;
+
+  /* overflow: hidden;
+   width: 20px;* (con esto se oculta la imagen pero el before ,, no se puede quitar */
 }
 
  .eslaider-foto img{
@@ -907,13 +940,12 @@ padding-top: 50px;
 /***menu lateral****/
 .menu-lateral{
    position: fixed;
-    bottom: 350px;
-    right: 0px;
-   
+   top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
 }
 .lateral svg{
-    fill: black;
-   
+    fill: black; 
 }
 
 .carrito{ 
@@ -923,11 +955,9 @@ padding-top: 50px;
  width: 50px; 
  padding-right: 20px;
  padding-top: 20px;
- cursor: pointer;
- 
- 
- 
+ cursor: pointer; 
 }
+
 .fotos{
     background-color: #e0041d;
     margin-bottom: 2px;
@@ -936,8 +966,6 @@ padding-top: 50px;
     padding-right: 20px;
     padding-top: 20px;
     cursor: pointer;
-    
-
 }
 .panel{
     background-color:#e0041d;
@@ -946,9 +974,26 @@ padding-top: 50px;
     padding-right: 20px;
     padding-top: 20px;
     cursor: pointer;
+}
+/* los hover del menu laterla*/
+.carrito:hover{
+     width: 60px;
+    transition-duration: .5s;
+    background-color: rgb(93, 19, 19);
     
 }
-/*ancla final de la pagina(no funciona el ancla ARREGLAR)*/
+.fotos:hover{
+    width: 60px;
+    background-color: rgb(93, 19, 19);
+    transition-duration: .5s;
+}
+.panel:hover{
+    width: 60px;
+    transition-duration: .5s;
+    background-color: rgb(93, 19, 19);
+    
+}
+/*ancla final de la pagina*/
 .icono svg{
     fill: white;
     position: fixed;
@@ -959,3 +1004,14 @@ padding-top: 50px;
     background-color: black;
     cursor: pointer;
 }
+.icono svg :hover{
+    fill: red;
+
+}
+/********************************* pagina del home***********************/
+ .cambio-de-color{
+    background-color: red ;
+ }
+ .cambio-de-color p{
+    visibility: hidden;
+ }
