@@ -1,0 +1,102 @@
+@keyframes border-color{
+    0% {
+        background: rgb(224, 221, 221);
+    }
+    50%{
+        background: rgba(150, 3, 8, 0.608);
+    }
+    100%{
+        background: rgb(30, 29, 29);
+    }
+}
+
+html{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+ body{
+    background-color: rgb(178, 233, 235);
+ }
+ header{
+    
+ }
+ .grid{
+    display: grid;
+    grid-template-columns: repeat(3, 100 px);
+    grid-template-rows: repeat(3, 100 px);
+    justify-content: center;
+    left: 50%;
+    
+    
+ }
+ .grid-imagen-portada {
+    background-image: url(https://cdn.pixabay.com/photo/2020/05/07/04/01/digitization-5140071_640.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 300px;
+     width: 900px;
+     grid-column-start:1;
+     grid-column-end: 2;
+     grid-row-start: 1;
+     grid-row-end: 2;  
+    background-position: center;
+    box-shadow: 1px 1px 10px black ;
+     margin-top: 3%;
+    /*_____descripcion sobre mi y la imagen mia _______*/
+ }
+ .mi-imagen img{
+    width: 200px;
+    height:200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    right: 45.5%;
+    
+ }
+ hr{ margin-top: 4%;
+    background-color: black;
+    max-width: 444px;
+    
+ }
+ .descripcion-de-mi{
+    text-align: center;
+ }
+
+ /*_____logo de codespace_____*/
+
+ .logocode-space img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 22%;
+   margin-top: -60%;
+    box-shadow: 1px 1px 10px black 
+ }
+ .logocode-space a{
+    left: 70%;
+    position: absolute;
+    margin-top: 4%;
+ }
+ 
+ .logo-linkendin img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: 25%;
+    margin-top: 6%;
+ }
+ .aprendizaje{
+    text-align: center;
+ }
+ /*_____________________________footer______________________*/
+ .iconos{
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+    
+    img{
+        width: 100px ;
+        height:100px ;
+        margin: 1px 20px 1px 20px;
+    }
+ }

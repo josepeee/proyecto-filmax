@@ -1,0 +1,173 @@
+@keyframes change-color{
+    0% {
+        background: red;
+    }
+    50%{
+        background: rgba(150, 3, 8, 0.608);
+    }
+    100%{
+        background: rgb(30, 29, 29);
+    }
+}
+
+/*linea debajo de la bara de navegacion*/
+.cambio-de-color{
+    animation:change-color 2s ease 0s infinite;
+    height: 30px;
+    p{
+        visibility: hidden;
+     }
+     /*__________________________*/
+ }
+
+ /*las 4 portadas de la imagen*/
+ .portadas img{
+    cursor: pointer;
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    margin-top: 20PX;
+    gap: 25px;
+    margin-left: 20px;
+    
+ }
+ /*hover para cuando pongamos el raton encima de la imagen*/
+ .portadas img:hover{ 
+    transition: all  0.5s  linear;
+    width: 300px;
+    height: 300px;
+    gap: 30px;
+    box-shadow: 1px 1px 10px black ;
+    
+ }
+ .secion-de-cartelera{
+    position: relative;
+ }
+ /*promixos estrenos */
+ .seciones-aparte {
+    position: absolute;
+    width: 120px ;
+    height: 120px;
+    right: 30%;
+    top: 20%;
+    gap: 10%;
+    box-shadow: 1px 1px 10px black 
+ }
+ .seciones-aparte img{
+    box-shadow: 1px 1px 10px black;
+
+ }
+/*titulo de proximos estrenos*/
+.seciones-aparte h2{
+    background-color: red;
+    margin-bottom: 7%;
+    text-align: center; 
+    width: 300px; 
+}
+/*parrafo de los promixos estrenos*/
+.seciones-aparte p{
+    color: white;
+    position: absolute;
+    top: 60px;
+    left: 125px;
+     width: 250px;
+     height: 100px;
+}
+/*texto de los proximos estrenos apartado de spiderman*/
+.tex-spiderman p{
+    position: absolute;
+    top: 200px;
+    color: white;
+}
+/*los hover de los promixos estrenos*/
+.seciones-aparte :hover a{
+    cursor: pointer;
+    color: rgb(7, 7, 203);
+}
+.tex-spiderman :hover a{
+    cursor: pointer;
+    color: rgb(7, 7, 203);
+}
+.reserva{
+    position: relative;
+    h2{
+        font-size: 30px; 
+        text-align: left;
+        left: 600px;
+        position: absolute;
+        margin-top: 2%;
+        
+    }
+}
+
+.reserva:hover h2{
+    animation:change-color 2s ease 0s infinite;
+    cursor: pointer;
+}
+.formulario{
+    margin-left: 10%;
+    flex-direction: column;
+    margin-top: 5%;
+}
+.for-input{
+    border: solid 1px black;
+    margin-top: 5px;
+    background-color: aliceblue;
+}
+.privacidad{
+    margin-left: 25%;
+}
+
+
+.cartelera-principal:hover h2{
+    transform: rotate( 360deg);
+    transition: all .5s;
+}
+ /*carrusel*/
+.cartelera-principal{
+    height: 70px;
+    font-size: 50px;
+    animation:change-color 2s ease 0s infinite;
+    cursor: pointer;
+    margin-bottom: 17%;
+    position: relative;
+
+    h2{
+        text-align: center;
+        margin-top: 5%;
+       }
+
+    }
+.carrusel{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+   
+}
+.elemento{
+   margin: 20px;
+    flex: 1 0 auto;
+    transform: translateX(-4%); 
+   
+    img{
+        height: 300px;
+         width: 300px;
+         block-size: cover;
+    }
+    
+}
+.elemento1 p{
+    position: absolute;
+    top: 240px;
+    font-size: 30PX;
+    color: black;
+    background-color: red;
+    margin-left: 20px;
+    opacity: 0;
+    display: flex;
+}
+.elemento:hover p{
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+
