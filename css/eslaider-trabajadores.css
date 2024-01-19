@@ -1,0 +1,90 @@
+
+
+/*__aqui empieza la secion del eslaider de los trabajadores______*/
+/*secion eslaiders trabajadores*/
+.eslaider-trabajadores{
+    display: flex;
+    background-color: var(--color-secundary);
+     color: var(--color-white);
+    text-align: center;
+    justify-content: center;
+    padding-top: 40px;
+    
+   }
+   .hiden{
+    display: flex;
+    overflow: hidden;
+    max-width: 1200px;
+   }
+
+   /*comillas en el eslaider*/
+   .comillas{
+    position: relative;
+    
+   }
+   .comillas::after{
+    content:",,";
+     position: absolute;
+     z-index: 1;    
+     font-size: 100%;
+     color: #fff;
+     background-color: black;
+     cursor: grab;
+     width: 34px;
+     height:34px ;
+    font-size: 20px ;   
+    border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     bottom: -20px;
+     left: 50%;
+     transform: translateX(-50%);
+     font-size: 30px;
+     font-weight: bold;
+    
+   }
+   /*____________*/
+     .eslaider-foto{
+       height:400px ;
+       width:400px; 
+       flex: 0 0 400px;
+
+       blockquote{
+        padding-top: 30px;
+     }
+     }
+ 
+ .eslaider-trabajaores-parrafo{
+    --font-family-primary:"roboto Condensed" , sans-serif;
+    font-size: 1.25em;
+    text-align: center;
+    line-height: 1.5em;
+    margin-top: 30px;
+
+}
+ .film{
+    padding-top: 50px; 
+    b{
+        font-size: 13px;
+        font-style: normal;
+        letter-spacing: 1px;
+        --font-family-primary:"roboto Condensed" , sans-serif;
+     }
+     span{
+        margin-top: 0.7em;
+        font-size: 12px;
+        opacity: .75;
+    }
+ }
+ 
+ .eslaider-foto img{
+    border-radius: 50%; 
+    width: 105px;
+    aspect-ratio: auto 105 / 105;
+    height: 105px;
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+    position: relative;
+ }
+    /*______________aqui termina es elaiders de los trabajadores__________*/

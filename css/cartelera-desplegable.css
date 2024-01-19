@@ -1,0 +1,101 @@
+ 
+ /***********aqui empieza la cartelera con el texto desplegable*****/
+/* cartelera*/
+.cartelera{
+    position: relative;
+    display: flex;
+    background-color: var(--color-secundary);
+    cursor: var(--cursor-button);
+}
+
+.cartelera-parrafo{
+   position: absolute;
+   margin-left: 20px;
+   top: 550px;
+   color: var(--color-white);
+
+   h3{
+    font-family: var(--font-family-primari);
+    font-weight: 700px;
+    text-transform: uppercase;
+    font-size: 1.688em;
+    padding-top: 10px;
+    margin: 0 0 10px;
+    letter-spacing: .2px;
+}
+    h3::before{
+    content: "";
+    display: block;
+    background-color: #f8b350;
+    height: 1px;
+    width: 44px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+     svg{
+    fill:#f8b350; 
+    height: 10px;
+    width: 10px;
+    line-height: 33px;
+    display: inline-block;
+    background: #2e3036;
+    -webkit-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 30px;
+   position: absolute;
+    opacity: 0;
+    bottom: 0;
+}
+
+}
+
+.cartelera-parrafo-action{
+    font-family: var(--font-family-primari);
+    font-size: 12px;
+    line-height: 16px;
+    color:#bdbdbd;
+    
+}
+.cartelera-wacth{
+    font-family: var(--font-family-primari);
+    font-size: 11px;
+    font-weight: 700px;
+    letter-spacing: .5px;
+    padding-left: 46px;
+    color: var(--color-white);
+    margin-top: 10px;
+    opacity: 0;
+    bottom: 0;
+
+    a{
+        margin-left: 50px;
+        }
+/****flecha amarilla en el eslaider de la cartelera ****+PREGUNTAR EN LA CLASE EL JUEVESSSSSSSSSSSSSSSSSS******/
+        a ::before{
+            content: "";
+            color: #f8b350;
+            height: 33px;
+            width: 33px;
+           line-height: 33px;
+           
+        }
+
+}
+
+/*transciones en la carterlera*/
+.cartelera-transition:hover svg {
+    opacity: 1;
+}
+.cartelera-transition:hover .cartelera-wacth{
+opacity: 1;
+}
+.cartelera-transition:hover .cartelera-parrafo {
+  top:70%;
+  transition-duration: .5s;
+  
+}
+/*______________aqui termina la secion de la cartelera  despegable______________*/

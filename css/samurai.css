@@ -1,0 +1,81 @@
+/*____________aqui empieza el samurai____________*/
+/*samurai*/
+.marco-samurai{
+    padding-top: 40px;
+    
+}
+/*samurai linea roja*/
+.samurai-tex::before{
+    content:"";
+    display: block;
+    height: 1px;
+    width: 48px;
+    background-color:var(--color-secundary);
+}
+.samurai{
+    background-image: url(https://filmax.themerex.net/wp-content/uploads/2018/01/bg_samurai.jpg?id=458);
+    height: 440px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-size: cover;
+    font-family: var(--font-family-primari);
+
+}
+.samurai-tex{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-right: 110px;
+
+        p{
+            font-size: 13px;
+            line-height: 16px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            font-family: var(--font-family-primari);
+        }
+
+        h3{
+            padding-top: 34px;
+            margin: 0;
+            font-weight: 700px;
+            letter-spacing: -.3px;
+            font-size: 2.313rem;
+            color: var(--color-primary);
+            font-family: var(--font-family-primari);}
+
+}
+.samurai-hbo{
+    display: flex;
+    gap: 10px;
+}
+.samurai-parrafo{
+    font-size: 0.938em;
+    line-height: 1.1em;
+}
+
+/*icono del pley samurai*/
+#Layer_1{ 
+    padding-left: 10px;
+   padding-right: 7px;
+}
+/**footer del samurai */
+.view{
+    color:var(--color-secundary);
+    cursor: var(--cursor-button);
+}
+/**pie de pagina del samurai  VIEW**/
+#Outline{
+    fill:var(--color-secundary);
+    cursor: var(--cursor-button);
+    margin-right: 10px
+}
+/*PIE DE PAGINA DEL SAMURAI WATCH TRAILER*/
+footer svg{
+    cursor: var(--cursor-button);
+    margin-right: 3px;
+    margin-left: 10px;
+}
+/*********************aqui termina el samurai********************/

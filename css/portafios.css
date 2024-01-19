@@ -11,14 +11,14 @@
 }
 
 html{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
  body{
     background-color: rgb(178, 233, 235);
  }
- header{
-    
+ h1{
+   font-size: 25px;
  }
  .grid{
     display: grid;
@@ -31,7 +31,8 @@ html{
  }
  .grid-imagen-portada {
     background-image: url(https://cdn.pixabay.com/photo/2020/05/07/04/01/digitization-5140071_640.jpg);
-     background-size: cover;
+     object-fit: cover;
+     /*background-size: cover;*/
      background-repeat: no-repeat;
      height: 300px;
      width: 900px;
@@ -50,7 +51,9 @@ html{
     border-radius: 50%;
     position: absolute;
     top: 10%;
-    right: 45.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
     
  }
  hr{ margin-top: 4%;

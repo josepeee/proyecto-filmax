@@ -1,6 +1,6 @@
 @keyframes change-color{
     0% {
-        background: red;
+        background: rgb(161, 71, 71);
     }
     50%{
         background: rgba(150, 3, 8, 0.608);
@@ -9,6 +9,14 @@
         background: rgb(30, 29, 29);
     }
 }
+
+/**** lista de la cabezera para colocar before**/
+.link-main:not(:first-child)::before{
+    content: "/";
+    color: #737373;
+    margin-right: 30px;
+}
+
 
 /*linea debajo de la bara de navegacion*/
 .cambio-de-color{
@@ -24,11 +32,12 @@
  .portadas img{
     cursor: pointer;
     border-radius: 10px;
-    width: 250px;
+    width: 200px;
     height: 250px;
     margin-top: 20PX;
     gap: 25px;
-    margin-left: 20px;
+    object-fit: cover;
+    margin-left: 50px;
     
  }
  /*hover para cuando pongamos el raton encima de la imagen*/
@@ -38,6 +47,7 @@
     height: 300px;
     gap: 30px;
     box-shadow: 1px 1px 10px black ;
+    object-fit: cover;
     
  }
  .secion-de-cartelera{
@@ -55,7 +65,8 @@
  }
  .seciones-aparte img{
     box-shadow: 1px 1px 10px black;
-
+    background-size: cover;
+    
  }
 /*titulo de proximos estrenos*/
 .seciones-aparte h2{
@@ -95,14 +106,14 @@
         text-align: left;
         left: 600px;
         position: absolute;
-        margin-top: 2%;
+        
         
     }
 }
 
 .reserva:hover h2{
-    animation:change-color 2s ease 0s infinite;
     cursor: pointer;
+
 }
 .formulario{
     margin-left: 10%;
@@ -113,6 +124,7 @@
     border: solid 1px black;
     margin-top: 5px;
     background-color: aliceblue;
+     all:revert;
 }
 .privacidad{
     margin-left: 25%;
@@ -142,8 +154,12 @@
     display: flex;
     flex-wrap: nowrap;
     overflow: scroll;
-   
+    img{
+        object-fit: cover;
+        border-radius: 10%;
+    }
 }
+  
 .elemento{
    margin: 20px;
     flex: 1 0 auto;
@@ -152,7 +168,7 @@
     img{
         height: 300px;
          width: 300px;
-         block-size: cover;
+         background-size: cover;
     }
     
 }

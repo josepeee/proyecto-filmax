@@ -1,0 +1,229 @@
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+    all: unset;
+    display: revert;
+}
+html {
+   font-family: var(--font-family-primari);
+    font-weight: 700;
+    font-size: 16px;
+    scroll-behavior: smooth;
+      }
+img {
+    max-width: 100%;
+    height: auto;
+}
+/*todas las listas*/
+li {
+    list-style: none;
+}
+/*************************header**************************************/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-primary);
+    color:var(--color-white);
+    max-width: 1200px;
+    margin-inline: auto;
+    height: 80px;
+    text-transform: uppercase;
+/* colocar mano en el logo de la cabezera**/
+    img{
+        cursor: pointer;
+    }
+    svg {
+        width: 20px;
+        height: 20px;
+        fill: var(--color-white)
+    }
+    ul {
+        display: flex;
+        cursor: var(--cursor-button);
+    }
+}
+
+.stiky{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.main-menu ul{
+    position: relative;
+}
+/*linea roja de la bara de navegacion*/
+.link-main a:hover::after{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 10%;
+    background-color: var(--color-secundary);
+    display: flex;
+}
+.link-main:not(:first-child) a:hover::after{
+    margin-left: 35px;
+}
+
+/**** lista de la cabezera para colocar before**/
+.link-main:not(:first-child)::before{
+    content: "/";
+    color: #737373;
+    margin-right: 30px;
+}
+
+
+/*-------aqui empieza el aside------------------*/
+/*primer section */
+.new {
+    position: relative;
+    --color-primary: #1a1d24;
+    max-width: 1100px;
+    margin-inline: auto;
+    display: flex;
+    gap: 30px;
+    color: var(--color-white);
+    padding-bottom: 200px;
+    }
+    /*recent news*/
+.new img:hover{
+        cursor: var(--cursor-button);
+    }
+
+.new  aside article {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.new h2 {
+    font-size: 1.63em;
+    margin-bottom: 25px;
+}
+.recent-new::after{ /*linea roja*/  
+content: "";
+height: 1px;
+width: 28px;
+background-color: var(--color-secundary);
+display: inline-block;
+vertical-align: middle;
+margin-top: -1px;
+margin-left: 16px
+}
+
+.new time {
+    font-size: 10px;
+}
+
+.new>article {
+    width: 90%;
+}
+
+/* los hover del aside lateral */
+.stars :hover {
+    color: gray;
+    cursor: var(--cursor-button);
+    transition: 0.5s;
+}
+
+.Coachella:hover {
+    color: grey;
+    cursor: var(--cursor-button); 
+    transition: 0.5s;
+}
+
+.Titanic :hover {
+    color: gray;
+    cursor: var(--cursor-button);
+    transition: 0.5s;
+}
+
+.header .main-menu ul,
+/*Menu principal*/
+.header .tools-menu,
+/*Menu herramientas*/
+.header .tools-menu ul/*redes sociales*/
+{
+   display: flex;
+   align-items: center;
+   gap: 40px;
+}
+/* le vamos a colocar los hover a las redes sociales*****/
+#Capa_1:hover{ /* twitter*/
+    fill: #1da1f3;
+    cursor: var(--cursor-button);
+    transition: 0.5s;
+}
+#Capa_2:hover{ /* facebook******/
+    fill: #3a559f;
+    cursor: var(--cursor-button);
+    transition: 0.5s;
+}
+#Capa_3:hover{ /*****instagram****/
+    fill: #ef1b50;
+    cursor: var(--cursor-button);
+    transition: 0.5s;
+}
+#Capa_4:hover{
+    fill: #ce031a;
+    cursor: var(--cursor-button);
+    transition: 0.5s;
+}
+
+main {
+    background-color: #abb8c3;
+}
+
+.bg-main {
+    background-color: var(--color-primary);
+
+}
+
+.new aside article:last-child {
+    margin-bottom: 0;
+}
+
+/* titulo de pie de foto de la imagen principal */
+.news-data {
+    position: absolute;
+    bottom: 200px;
+    right: 12px;
+    max-width: 400px;
+    background-color: var(--color-primary);
+    padding: 40px 0 0 40px;
+
+    h2 {
+        margin: 20px;
+        font-size: 30px;
+    }
+    p {
+        margin: 20px;
+        font-size: 16px;
+        letter-spacing: -0, 03px;
+        font-family: var(--font-family-primari);
+    }
+     /*tamaño y margen en el enlce de read more*/
+    a {
+        margin: 20px;
+        font-size: 10px;
+    }
+/*news-data cambia de color el svg*/
+    svg{
+        fill: #e0011a;
+        cursor: var(--cursor-button); 
+    }
+    /*hover al READ MORE*/
+    a:hover{
+        color: #e0011a;
+        cursor: var(--cursor-button);
+        transition: 0.8s;
+    } 
+}
+
+.new>article {
+    height: 600px;
+    width: 80%;
+    background-repeat: no-repeat;
+    background-image: url(https://filmax.themerex.net/wp-content/uploads/2018/01/top-promo.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}

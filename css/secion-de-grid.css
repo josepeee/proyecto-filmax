@@ -1,0 +1,275 @@
+
+
+/*______________aqui empieza  la secion de grid__________*/
+ /*secion de las 4 fotos con grid*/
+ .white{
+    background-color:var(--color-white); 
+    padding-top: 50px;
+ }
+ .white-titulo{
+    padding-left: 105px;
+    padding-bottom: 20px;
+    font-family: var(--font-family-primari);
+    font-weight: 700;
+    font-size: 2.313rem;
+    letter-spacing: -.3px;
+    margin-top: 10px;
+ /*linea roja en el titulo del apartado del grip*/
+    ::before{
+        content: "";
+        background-color: var(--color-secundary);
+        content: '';
+        display: block;
+        height: 1px;
+        width: 48px;
+        position: relative;
+        left: 5%;
+        margin-bottom: 2%;  
+     }
+
+ }
+
+ .white-parrafo{
+    color: #737373;
+   padding-left: 105px;
+   padding-bottom: 40px;
+   font-size: 16px;
+ }
+ .grid{
+    display: grid;
+    grid-template-columns: repeat(5, 250px);
+    grid-template-rows: repeat(3, 200px);
+    justify-content: center;
+    margin-left: 50px;
+ }
+ 
+.elemento-grid-1{
+    background-size: cover;
+    background-image: linear-gradient(transparent,  #393939 ), url("https://filmax.themerex.net/wp-content/uploads/2017/12/post-3-copyright-1170x658.jpg");
+    grid-column-start:1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;  
+   background-position: center;
+   width: 570px;
+   height: 570px;
+   cursor: var(--cursor-button);
+   position: relative;/* para poner la informacion en el pie de la imagen*/
+
+}
+.elemento-grid-2{
+    background-image: linear-gradient(transparent, #393939 ), url("https://filmax.themerex.net/wp-content/uploads/2017/12/post-12-copyright-760x428.jpg");
+    background-size: cover;
+    grid-column-start:3;
+    grid-column-end:4;  
+    grid-row-start: 1 ;
+    grid-row-end: 2;
+    width: 270px;
+    height: 270px;
+    background-position: center;
+    margin-left: 100px;
+    cursor: var(--cursor-button);
+    position: relative;/* para poner la informacion en el pie de la imagen*/
+
+      
+} 
+   
+.elemento-grid-3{
+    background-image: linear-gradient(transparent, #393939), url("https://filmax.themerex.net/wp-content/uploads/2017/12/post-5-copyright-760x428.jpg");
+    grid-column-start:4;
+    grid-column-end:5;  
+    grid-row-start: 1 ;
+    grid-row-end: 2;
+    height: 270px;
+    width: 270px;
+    margin-left: 145px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    cursor: var(--cursor-button);
+       
+}
+
+.elemento-grid-4{
+    background-image: linear-gradient(transparent,  #393939), url("https://filmax.themerex.net/wp-content/uploads/2017/12/post-6-copyright-760x428.jpg");
+    object-fit: cover;
+    grid-column-start:3;
+    grid-column-end:5;  
+    grid-row-start: 2;
+    grid-row-end: 4;
+    width: 570px;
+    height:270px ;
+    background-position: center;
+    margin-top: 100px;
+    margin-left: 100px;
+    position: relative;
+    cursor: var(--cursor-button);
+
+
+}
+
+.info-grid-1{
+    position: absolute;
+    font-family: var(--font-family-primari);
+    padding-top: 400px;
+    margin-left: 20px;
+
+        /*informacion de la 1 foto*/
+    a{
+      font-family: var(--font-family-primari);
+       font-size: 11px;
+        letter-spacing: .25px;
+        background-color: transparent;
+        color: #eca948;
+        cursor: var(--cursor-button);
+        opacity: 1;
+    }
+
+    h3{
+        color: var(--color-white);
+        cursor: var(--cursor-button);
+        padding-top: 20px;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    span{
+        color: var(--color-white);
+        font-family: var(--font-family-primari);
+        letter-spacing: 1px;
+        font-size: 11px;
+        cursor: pointer;
+    }
+
+}
+
+/*informacion de la 2 foto*/
+.info-grid-2{
+    position: absolute;
+    font-family: var(--font-family-primari);
+    top: 140px; 
+    text-align: center;
+
+    a{
+        font-family: var(--font-family-primari);
+        font-size: 11px;
+        letter-spacing: .25px;
+        background-color: transparent;
+        color: #eca948;
+        cursor: var(--cursor-button);
+        margin-right: 20px;
+     
+     }
+
+     h3{
+        color: var(--color-white);
+        cursor: var(--cursor-button);
+        font-weight: 700;
+        font-size: 17px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    span{
+        color: var(--color-white);
+        font-family: var(--font-family-primari);
+        letter-spacing: 1px;
+        font-size: 11px;
+        cursor: var(--cursor-button);
+        padding-right: 80px;
+    }
+
+} 
+
+/*informacion de la 3 foto*/
+.info-grid-3{
+    position: relative;
+    font-family: var(--font-family-primari);
+    top: 140px;
+    text-align:left;
+    margin-left: 10px;
+    opacity: 1;
+
+    a{
+        font-family: var(--font-family-primari);
+        font-size: 11px;
+        letter-spacing: .25px;
+        background-color: transparent;
+        color: #eca948;
+        cursor: var(--cursor-button);
+    }
+    h3{
+        color: var(--color-white);
+        cursor: var(--cursor-button);
+        font-weight: 700;
+        font-size: 17px;
+       padding-top: 20px;
+       margin-bottom: 20px;
+    }
+    span{ 
+        color: var(--color-white);
+        font-family: var(--font-family-primari);
+        letter-spacing: 1px;
+        font-size: 11px;
+        cursor: var(--cursor-button);
+    }
+}
+/*informacion de la 4 foto */
+    .info-grid-4{
+        position: absolute;
+        opacity: 1;
+        text-align: left;
+         top: 130px;
+        left: 20px;
+
+     a{
+
+    font-family: var(--font-family-primari);
+    font-size: 11px;
+    letter-spacing: .25px;
+    background-color: transparent;
+    color: #eca948;
+    cursor: var(--cursor-button);
+    }
+    h3{
+        color: var(--color-white);
+        cursor: var(--cursor-button);
+        font-weight: 700;
+        font-size: 17px;
+       padding-top: 20px;
+       margin-bottom: 20px;
+    }
+    span{
+        color: var(--color-white);
+        font-family: var(--font-family-primari);
+        letter-spacing: 1px;
+        font-size: 11px;
+        cursor: var(--cursor-button);
+    }
+   }
+/*boton rojo*/
+.BROWSE{
+        text-align: center;
+        margin-top: 40px;
+
+     input{
+        background-color: var(--color-secundary);
+        color: var(--color-white);
+        font-size: 13px;
+        font-family: var(--font-family-primari);
+        font-weight: 700;
+        font-style: normal;
+        line-height: 18px;
+        letter-spacing: 1px;
+        cursor: var(--cursor-button);
+        border-radius: 4px;
+        width: 200px;
+        height:50.86px;
+    }
+      /*cambio de color el bonto BROWSE*/
+    :hover{
+        background-color: var(--color-secundary);
+       transition: 0.5s;
+      }
+}
+/*______________aqui termina el grid__________*/

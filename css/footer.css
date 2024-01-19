@@ -1,0 +1,220 @@
+
+/*______________aqui empieza el footer__________*/
+  /*footer*/
+
+  .footer-black{
+    padding-top: 60px;
+}
+
+.pie-de-pagina{
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 150px;
+    padding-bottom: 200px;
+}
+
+/*logo*/
+.logo span{
+  display: block;
+    font-family: var(--font-family-primari);
+    font-size: 14px;
+    padding-top: 20px;
+    a{
+        cursor: var(--cursor-button);
+    }
+}
+
+ /*titulos de los h3 del footer*/
+.footer-black h3{
+    margin-bottom: 1em;
+    line-height: 1.2em;
+    margin-top: 0;
+    font-size: 1.063em;
+    text-transform: uppercase;
+}
+/*after para colocar una linea roja en el footer en la parte de los titulos h3*/
+.linea-roja h3::after{
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 28px;
+    background: var(--color-secundary);
+    vertical-align: middle;
+    margin-top: -1px;
+    margin-left: 16px;
+}
+/*___________________________*/
+/*articulos Movies del footer*/
+.ar-movies{
+    color: #b8babb;
+    font-family: var(--font-family-primari);
+    font-size: 14px;
+
+    li{
+        margin-top: 20px;
+      }
+      /*hover en los enlaces del footer*/
+      :hover a{ 
+        color: white;
+        cursor: var(--cursor-button);
+        transition: 0.5s;
+    }
+    }
+
+.additi{
+    color: #b8babb;
+    font-family: var(--font-family-primari);
+    font-size: 14px;
+         
+    ul li{
+        margin-top: 20px;
+    }
+    /*hover en los enlaces del foote*/
+    :hover a{
+        transition: 0.5s;
+        color: var(--color-white);
+        cursor: var(--cursor-button);
+    }
+    
+}
+
+/*input*/
+.newlestter{
+    border: solid 1px white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+    svg{
+        width: 15px;
+        height: 15px;
+        fill: white;
+        cursor: pointer;
+    }
+     /** mirar el input ***************************/
+    a :hover{
+        fill: red;
+    }
+}
+
+/*redes*/
+.redes-footer ul {
+   display: flex;
+   gap: 10px;
+   padding-top: 50px;
+    padding-top: 50px;
+  li a svg{
+    fill: var(--color-white);
+    cursor: var(--cursor-button);
+    padding-top: 10px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+     }
+}
+
+.twitter{
+   border-radius: 50%;
+   background-color:#1da1f3;
+   width: 50px;
+   height: 50px;
+   text-align: center;
+   
+}
+.facebook{
+    border-radius: 50%;
+    background-color:#3a559f;
+    width: 50px; 
+    height: 50px;
+    text-align: center;
+}
+.instagram{
+    border-radius: 50%;
+    background-color: #f78da7;;
+    width: 50px; 
+    height: 50px;
+    text-align: center;
+    
+}
+.youtube{
+    border-radius: 50%;
+    background-color:#ce031a;
+    width: 50px; 
+    height: 50px;
+    text-align: center;
+}
+/***menu lateral****/
+.menu-lateral{
+   position: fixed;
+   top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+}
+.lateral svg{
+    fill: var(--color-primary); 
+}
+
+.carrito{ 
+ background-color: var(--color-secundary);
+ margin-bottom: 2px;
+ height: 50px;
+ width: 50px; 
+ padding-right: 20px;
+ padding-top: 20px;
+ cursor: var(--cursor-button); 
+}
+
+.fotos{
+    background-color: var(--color-secundary);
+    margin-bottom: 2px;
+    height: 50px;
+    width: 50px;
+    padding-right: 20px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+.panel{
+    background-color: var(--color-secundary);
+    height: 50px;
+    width: 50px;
+    padding-right: 20px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+/* los hover del menu laterla*/
+.carrito:hover{
+     width: 60px;
+    transition-duration: .5s;
+    background-color: rgb(93, 19, 19);
+    
+}
+.fotos:hover{
+    width: 60px;
+    background-color: rgb(93, 19, 19);
+    transition-duration: .5s;
+}
+.panel:hover{
+    width: 60px;
+    transition-duration: .5s;
+    background-color: rgb(93, 19, 19);
+    
+}
+/*ancla final de la pagina*/
+.icono svg{
+    fill: white;
+    position: fixed;
+    bottom: 40px;
+    right: 70px;
+    height: 3em;
+    width: 3em;
+    background-color: var(--color-primary);
+    cursor: var(--cursor-button);
+
+    svg :hover{
+        fill: red;
+    }
+}
+ 
