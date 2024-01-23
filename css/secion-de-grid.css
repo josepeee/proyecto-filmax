@@ -268,7 +268,7 @@
     }
       /*cambio de color el bonto BROWSE*/
     :hover{
-        background-color: var(--color-secundary);
+        background-color: rgb(177, 31, 31);
        transition: 0.5s;
       }
 }

@@ -175,12 +175,13 @@
 .elemento1 p{
     position: absolute;
     top: 240px;
-    font-size: 30PX;
+    font-size: 25PX;
     color: black;
-    background-color: red;
+    background-color: white;
     margin-left: 20px;
     opacity: 0;
     display: flex;
+   
 }
 .elemento:hover p{
     opacity: 1;

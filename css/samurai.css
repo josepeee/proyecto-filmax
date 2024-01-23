@@ -35,6 +35,7 @@
             font-weight: 700;
             letter-spacing: 1px;
             font-family: var(--font-family-primari);
+            color: rgb(131, 128, 128);
         }
 
         h3{
@@ -54,12 +55,27 @@
 .samurai-parrafo{
     font-size: 0.938em;
     line-height: 1.1em;
+
+    /*cambio de color el pley y el watch trailer*/
+}
+.pley-cambio-de-color {
+     display: inline-block;
+     cursor: pointer;
+        a :hover{
+        color: var(--color-secundary)
+        
+     }
+      :hover{ fill: red;
+
+     }
+     
 }
 
 /*icono del pley samurai*/
 #Layer_1{ 
     padding-left: 10px;
    padding-right: 7px;
+     
 }
 /**footer del samurai */
 .view{

@@ -35,8 +35,8 @@
 }
      svg{
     fill:#f8b350; 
-    height: 10px;
-    width: 10px;
+    height: 15px;
+    width: 15px;
     line-height: 33px;
     display: inline-block;
     background: #2e3036;
@@ -75,15 +75,12 @@
         margin-left: 50px;
         }
 /****flecha amarilla en el eslaider de la cartelera ****+PREGUNTAR EN LA CLASE EL JUEVESSSSSSSSSSSSSSSSSS******/
-        a ::before{
-            content: "";
-            color: #f8b350;
-            height: 33px;
-            width: 33px;
-           line-height: 33px;
-           
-        }
 
+}
+.cartelera-wacth svg{
+   position: absolute;
+   margin-left: 7%;
+  
 }
 
 /*transciones en la carterlera*/

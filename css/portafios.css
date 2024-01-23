@@ -27,15 +27,14 @@ html{
     justify-content: center;
     left: 50%;
     
-    
  }
  .grid-imagen-portada {
-    background-image: url(https://cdn.pixabay.com/photo/2020/05/07/04/01/digitization-5140071_640.jpg);
+    background-image: url(https://img.freepik.com/foto-gratis/concepto-collage-html-css_23-2150061955.jpg?w=996&t=st=1705871993~exp=1705872593~hmac=90969331b9cb492e92dc7d51ea544f554a5481b42e78af632a3691a89cbb5662);
      object-fit: cover;
      /*background-size: cover;*/
      background-repeat: no-repeat;
      height: 300px;
-     width: 900px;
+     width:890px;
      grid-column-start:1;
      grid-column-end: 2;
      grid-row-start: 1;
@@ -43,11 +42,43 @@ html{
     background-position: center;
     box-shadow: 1px 1px 10px black ;
      margin-top: 3%;
+
+     img{
+      width: 130px;
+      height: 300px;
+      object-fit: cover;
+      box-shadow: 1px 1px 10px black;
+      grid-column-start:1;
+      grid-column-end: 1;
+      grid-row-start: 1;
+      grid-row-end: 1;  
+     }
+     
     /*_____descripcion sobre mi y la imagen mia _______*/
  }
+ .portatil{
+   right: 26%;
+   position: absolute;
+   width: 150px;
+   height: 300px;
+   object-fit: cover;
+   box-shadow: 1px 1px 10px black;
+   grid-column-start:2;
+   grid-column-end: 2;
+   grid-row-start: 2;
+   grid-row-end: 2;  
+  
+  }
+
+
+  .imagen-lateral{
+   position: absolute;
+   object-fit: cover;
+   
+  }
  .mi-imagen img{
-    width: 200px;
-    height:200px;
+    width: 220px;
+    height:220px;
     border-radius: 50%;
     position: absolute;
     top: 10%;
@@ -64,30 +95,72 @@ html{
  .descripcion-de-mi{
     text-align: center;
  }
+ /*_____________lateral de la izquierda con las imagenes de linkedin y codespace_____________*/
 
- /*_____logo de codespace_____*/
-
- .logocode-space img{
+ /*tamallo de la fuente del h5*/
+ h5{
+   font-size: 15.5px;
+ }
+ fieldset{
+  border-radius: 7%;
+  box-shadow: 10px 10px 10px black;
+  background-image: url(https://img.freepik.com/foto-gratis/papel-monocromatico-vista-superior_23-2149062051.jpg?size=626&ext=jpg&ga=GA1.2.1742404882.1701971700&semt=ais);
+  background-size: cover;
+  font-family:  'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: relative;
+   
+ }
+ .imagenes-laterales{
+    width: 200px;
+    height: 200px;
+    left: 70%;
+    bottom: 30%;
+    position: absolute;
+    /*__tamallo de las imagenes codespace y linkeding___*/
+    img{
     width: 70px;
     height: 70px;
-    position: absolute;
-    left: 22%;
-   margin-top: -60%;
-    box-shadow: 1px 1px 10px black 
- }
- .logocode-space a{
-    left: 70%;
-    position: absolute;
-    margin-top: 4%;
+    margin: 10px;
+    object-fit: cover;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 20px;
+    
+    }
+    p{
+      font-size: 12px;
+      margin-bottom:20px ;
+    }
  }
  
- .logo-linkendin img{
-    width: 70px;
-    height: 70px;
-    position: absolute;
-    right: 25%;
-    margin-top: 6%;
+/*_____tamallo de la fuente del enclace de codespace_____*/
+ .logocode-space{
+   font-size: 13px;
  }
+ /*logo linkedin y texto*/
+ .logo-linkendin { 
+    margin-top: 5%;
+    margin-bottom: 10%;
+
+    a{  margin-bottom: 0;
+      position: relative;
+      
+    }
+
+ }
+ /*_____________cuadrado de la derecha aptitudes____________*/
+
+.lateral-derecha{
+   width: 200px;
+   height: 200px;
+   position: absolute;
+   left: 15%;
+   bottom: 30%;
+  
+}
+ li{
+   font-size: 12px;
+}
+ 
  .aprendizaje{
     text-align: center;
  }
