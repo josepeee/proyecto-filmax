@@ -60,13 +60,19 @@
     height: 120px;
     right: 30%;
     top: 20%;
-    gap: 10%;
-    box-shadow: 1px 1px 10px black 
+    box-shadow: 1px 1px 10px black;
+    
  }
  .seciones-aparte img{
     box-shadow: 1px 1px 10px black;
-    background-size: cover;
-    
+    object-fit: cover;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 10%;
+    &:hover{
+        cursor: pointer;
+     }
+     
  }
 /*titulo de proximos estrenos*/
 .seciones-aparte h2{
@@ -106,8 +112,6 @@
         text-align: left;
         left: 600px;
         position: absolute;
-        
-        
     }
 }
 
@@ -186,5 +190,5 @@
 .elemento:hover p{
     opacity: 1;
     transition-duration: 0.5s;
+ 
 }
-

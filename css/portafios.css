@@ -1,14 +1,4 @@
-@keyframes border-color{
-    0% {
-        background: rgb(224, 221, 221);
-    }
-    50%{
-        background: rgba(150, 3, 8, 0.608);
-    }
-    100%{
-        background: rgb(30, 29, 29);
-    }
-}
+
 
 html{
     font-family: Arial, Helvetica, sans-serif;
@@ -70,7 +60,6 @@ html{
   
   }
 
-
   .imagen-lateral{
    position: absolute;
    object-fit: cover;
@@ -94,6 +83,10 @@ html{
  }
  .descripcion-de-mi{
     text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 2%;
  }
  /*_____________lateral de la izquierda con las imagenes de linkedin y codespace_____________*/
 
@@ -113,9 +106,10 @@ html{
  .imagenes-laterales{
     width: 200px;
     height: 200px;
-    left: 70%;
-    bottom: 30%;
-    position: absolute;
+    order: -1;
+    
+     }
+   
     /*__tamallo de las imagenes codespace y linkeding___*/
     img{
     width: 70px;
@@ -130,7 +124,7 @@ html{
       font-size: 12px;
       margin-bottom:20px ;
     }
- }
+ 
  
 /*_____tamallo de la fuente del enclace de codespace_____*/
  .logocode-space{
@@ -152,11 +146,9 @@ html{
 .lateral-derecha{
    width: 200px;
    height: 200px;
-   position: absolute;
-   left: 15%;
-   bottom: 30%;
-  
+
 }
+
  li{
    font-size: 12px;
 }
@@ -176,3 +168,17 @@ html{
         margin: 1px 20px 1px 20px;
     }
  }
+
+/*Media Queries*/
+ 
+@media (max-width:1400px) {
+   .imagenes-laterales{ 
+      position: relative;
+      
+     
+   }
+   .lateral-derecha{
+      position: relative;
+      
+   }
+}
