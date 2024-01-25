@@ -5,7 +5,7 @@
 .eslaider-trabajadores{
     display: flex;
     background-color: var(--color-secundary);
-     color: var(--color-white);
+    color: var(--color-white);
     text-align: center;
     justify-content: center;
     padding-top: 40px;

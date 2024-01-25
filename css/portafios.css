@@ -1,21 +1,22 @@
 
-
 html{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+     font-family:  Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
 }
  body{
-    background-color: rgb(178, 233, 235);
+   background-image: linear-gradient(#266c78, #f0fbfa);
  }
+
  h1{
    font-size: 25px;
  }
  .grid{
     display: grid;
-    grid-template-columns: repeat(3, 100 px);
-    grid-template-rows: repeat(3, 100 px);
+    grid-template-columns: repeat(4, 100 px);
+    grid-template-rows: repeat(4, 100 px);
     justify-content: center;
     left: 50%;
+   
     
  }
  .grid-imagen-portada {
@@ -26,40 +27,28 @@ html{
      height: 300px;
      width:890px;
      grid-column-start:1;
-     grid-column-end: 2;
+     grid-column-end: 3;
      grid-row-start: 1;
-     grid-row-end: 2;  
+     grid-row-end: 3;  
     background-position: center;
     box-shadow: 1px 1px 10px black ;
      margin-top: 3%;
+   border-radius: 10%;
 
      img{
-      width: 130px;
+      position: absolute;
+      width: 150px;
       height: 300px;
       object-fit: cover;
-      box-shadow: 1px 1px 10px black;
-      grid-column-start:1;
-      grid-column-end: 1;
-      grid-row-start: 1;
-      grid-row-end: 1;  
+      box-shadow: 1px 1px 10px black; 
+      margin-top: 0px;
+      margin-left: -5px;
      }
+
      
     /*_____descripcion sobre mi y la imagen mia _______*/
  }
- .portatil{
-   right: 26%;
-   position: absolute;
-   width: 150px;
-   height: 300px;
-   object-fit: cover;
-   box-shadow: 1px 1px 10px black;
-   grid-column-start:2;
-   grid-column-end: 2;
-   grid-row-start: 2;
-   grid-row-end: 2;  
-  
-  }
-
+ 
   .imagen-lateral{
    position: absolute;
    object-fit: cover;
@@ -87,6 +76,7 @@ html{
     justify-content: center;
     gap: 30px;
     margin-top: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
  }
  /*_____________lateral de la izquierda con las imagenes de linkedin y codespace_____________*/
 
@@ -101,7 +91,7 @@ html{
   background-size: cover;
   font-family:  'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   position: relative;
-   
+  font-style: initial;
  }
  .imagenes-laterales{
     width: 200px;
@@ -155,11 +145,19 @@ html{
  
  .aprendizaje{
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
  }
  /*_____________________________footer______________________*/
+
+ footer{background-image: linear-gradient(#288592, #b8d9db);
+   border: solid 2px#133139;
+   
+}
  .iconos{
     display: flex;
-    margin-top: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     justify-content: center;
     
     img{
@@ -169,16 +167,24 @@ html{
     }
  }
 
-/*Media Queries*/
- 
+/*Media Queries de  footer*/
 @media (max-width:1400px) {
-   .imagenes-laterales{ 
-      position: relative;
-      
-     
+   .iconos img{  
+      width: 50px;
+      height: 50px;
+      margin: 7px;
    }
-   .lateral-derecha{
-      position: relative;
-      
+   
    }
-}
+   
+/*Media Queries del bloque de aptitudes*/
+   @media (max-width:1400px){
+      .lateral-derecha{
+         display: contents;
+         
+      }
+   }
+ /*Media Queries del bloque de aptitudes*/
+ @media (max-width:1400px){
+   
+ }
